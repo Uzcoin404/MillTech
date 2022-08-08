@@ -1,0 +1,41 @@
+@media (max-height: 880px) {
+    .hero{
+        margin-top: 150px;
+    }
+}
+@media (max-width: 1400px) {
+    .service2__title, .service3__title, .service4__title, .service5__title{
+        font-size: 44px !important;
+    }
+    .service2 .section__text, .service3 .section__text, .service4 .section__text, .service5 .section__text{
+        font-size: 20px !important;
+        width: 100%;
+    }
+    .service4 .section__title{
+        width: 100%;
+    }
+    .slider label{
+        width: 600px;
+    }
+}
+@media (max-width: 1200px) {
+    .service .section__title{
+        margin: 0 auto;
+    }
+    .section__text{
+        width: 100% !important;
+    }
+    .section__img{
+        width: 50%;
+        height: auto;
+    }
+    .search__input{
+        width: 400px;
+    }
+    .user__cart{
+        margin-right: 50px;
+    }
+}
+@media (max-width: 1400px) {
+    
+}
