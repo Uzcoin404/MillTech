@@ -8,7 +8,7 @@
         <meta name="description" content="MillTech" />
         <title>MillTech Product</title>
         <link rel="stylesheet" href="../css/style.css" />
-        <link rel="stylesheet" href="../css/product.css" />
+        <link rel="stylesheet" href="../css/login.css" />
         <link rel="stylesheet" href="css/media.css" />
     </head>
 
@@ -89,218 +89,43 @@
             </div>
         </nav>
 
-        <div class="product">
-            <div class="product__header">
-                <div
-                    class="container d-flex justify-content-end align-items-center"
-                >
-                    <div class="d-flex align-items-center me-5">
-                        <img src="../img/icon/stat.svg" alt="" />
-                        <p class="product__header__text">Achat</p>
+        <div class="login">
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="#">Acceuil</a>
+                    </li>
+                    <li class="breadcrumb-item" aria-current="page">
+                        Login
+                    </li>
+                </ol>
+                <div class="login__title">Login</div>
+                <div class="login__wrapper">
+                    <div class="login__content">
+                        <form action="#" class="login__form">
+                            <h4 class="login__content__title">Connectez Vous</h4>
+                            <p class="login__content__text">If you have an account, sign in with your email address.</p>
+                            <label for="email" class="login__label">Email <span>*</span></label>
+                            <input type="email" class="login__input" id="email" placeholder="Email">
+                            <label for="password" class="login__label">Mot De Passe <span>*</span></label>
+                            <input type="password" class="login__input" id="password" placeholder="Mot De Passe">
+                            <div class="login__footer d-flex align-items-center mt-4">
+                                <button type="submit" class="btn btn-primary btn-lg login__btn">Se Connecter</button>
+                                <a href="#" class="login__forgot ms-3">Mot De Passe Oublier ?</a>
+                            </div>
+                        </form>
                     </div>
-                    <div class="d-flex align-items-center">
-                        <img src="../img/icon/stat.svg" alt="" />
-                        <p class="product__header__text">Location</p>
+                    <div class="new">
+                        <h4 class="login__content__title">Nouveau Client ?</h4>
+                        <p class="new__text">Pourquoi créer un compte : </p>
+                        <ul class="new__list">
+                            <li>Checkout Plus Vite</li>
+                            <li>Enregistre Plusieurs Adresses</li>
+                            <li>Suivi des commandes</li>
+                        </ul>
+                        <a href="#" role="button" class="btn btn-primary btn-lg login__btn">Créer un Compte</a>
                     </div>
-                    <p class="product__header__price">
-                        On Sale from <span class="fw-bolder">$3,299.00</span>
-                    </p>
-                    <select class="form-select product__header__select">
-                        <option selected>1</option>
-                        <option value="1">2</option>
-                        <option value="2">3</option>
-                        <option value="3">4</option>
-                    </select>
-                    <a
-                        href="#"
-                        role="button"
-                        class="btn btn-lg btn-primary product__header__pay"
-                        >Ajouter Au Panier</a
-                    >
-                    <a
-                        href="#"
-                        role="button"
-                        class="btn btn-lg product__header__paypay"
-                        ><img src="../img/icon/paypal-icon.png" alt=""
-                    /></a>
                 </div>
-            </div>
-            <div class="product__about">
-                <section class="about__main">
-                    <div class="about__main__content w-50">
-                        <div class="about__main__blog">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item">
-                                    <a href="#">Acceul</a>
-                                </li>
-                                <li class="breadcrumb-item">
-                                    <a href="#">Laptops</a>
-                                </li>
-                                <li
-                                    class="breadcrumb-item active"
-                                    aria-current="page"
-                                >
-                                    MSI WS Series
-                                </li>
-                            </ol>
-                            <h3 class="about__main__title">
-                                MSI MPG Trident 3
-                            </h3>
-                            <a href="#" class="about__main__review">
-                                Be the first to review this product
-                            </a>
-                            <p class="about__main__desc">
-                                MSI MPG Trident 3 10SC-005AU Intel i7 10700F,
-                                2060 SUPER, 16GB RAM, 512GB SSD, 2TB HDD,
-                                Windows 10 Home, Gaming Keyboard and Mouse 3
-                                Years Warranty Gaming Desktop
-                            </p>
-                            <div class="about__main__footer">
-                                <p class="about__main__contact">
-                                    Have a Question?
-                                    <a href="#" class="fw-normal">Contact Us</a>
-                                </p>
-                                <p class="about__main__model">SKU D5515AI</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="about__main__image w-50">
-                        <div
-                            id="carouselExampleIndicators"
-                            class="carousel slide h-100"
-                            data-ride="carousel"
-                        >
-                            <ol class="carousel-indicators">
-                                <li
-                                    data-target="#carouselExampleIndicators"
-                                    data-slide-to="0"
-                                    class="active"
-                                ></li>
-                                <li
-                                    data-target="#carouselExampleIndicators"
-                                    data-slide-to="1"
-                                ></li>
-                                <li
-                                    data-target="#carouselExampleIndicators"
-                                    data-slide-to="2"
-                                ></li>
-                            </ol>
-                            <div class="carousel-inner h-100">
-                                <div class="carousel-item active">
-                                    <div class="carousel__img w-100">
-                                        <img src="../img/product.png" alt="" />
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="carousel__img w-100">
-                                        <img src="../img/product.png" alt="" />
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="carousel__img w-100">
-                                        <img src="../img/product.png" alt="" />
-                                    </div>
-                                </div>
-                            </div>
-                            <a
-                                class="carousel-control-prev"
-                                href="#carouselExampleIndicators"
-                                role="button"
-                                data-slide="prev"
-                            >
-                                <span
-                                    class="carousel-control-prev-icon"
-                                    aria-hidden="true"
-                                ></span>
-                            </a>
-                            <a
-                                class="carousel-control-next"
-                                href="#carouselExampleIndicators"
-                                role="button"
-                                data-slide="next"
-                            >
-                                <span
-                                    class="carousel-control-next-icon"
-                                    aria-hidden="true"
-                                ></span>
-                            </a>
-                        </div>
-                    </div>
-                </section>
-                <section class="product__about2">
-                    <div class="w-50"></div>
-                    <div class="product__about2__content w-50">
-                        <h2 class="about__main__title">MSI MPG Trident 3</h2>
-                        <a href="#" class="about__main__review">
-                            Be the first to review this product
-                        </a>
-                        <table class="table">
-                            <tbody>
-                                <tr>
-                                    <th scope="row">CPU</th>
-                                    <td>N/A</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Featured</th>
-                                    <td>N/A</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">I/O Ports</th>
-                                    <td>N/A</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <div class="about__main__footer w-100">
-                            <p class="about__main__contact">
-                                Have a Question?
-                                <a href="#" class="fw-normal">Contact Us</a>
-                            </p>
-                            <p class="about__main__model">SKU D5515AI</p>
-                        </div>
-                        <p class="product__about2__more">+ More information</p>
-                    </div>
-                </section>
-                <section class="product__about3">
-                    <div class="product__about3__content w-50">
-                        <div class="product__about3__blog">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item">
-                                    <a href="#">Acceul</a>
-                                </li>
-                                <li class="breadcrumb-item">
-                                    <a href="#">Laptops</a>
-                                </li>
-                                <li
-                                    class="breadcrumb-item active"
-                                    aria-current="page"
-                                >
-                                    MSI WS Series
-                                </li>
-                            </ol>
-                            <h2 class="about__main__title">MSI MPG Trident 3</h2>
-                            <a href="#" class="about__main__review">
-                                Be the first to review this product
-                            </a>
-                            <ul class="product__about3__desc">
-                                <li>Intel Core i7-10700F</li>
-                                <li>Intel H410</li>
-                                <li>WHITE</li>
-                                <li>NVIDIA MSI GeForce RTX 2060 SUPER 8GB AERO ITX GDDR6</li>
-                                <li>SO-DIMM 16GB (16GB x 1) DDR4 2666MHz</li>
-                                <li>2 total slots (64GB Max)</li>
-                                <li>512GB (1 x 512GB) M.2 NVMe PCIe GEN3x4 SSD 2TB (2.5) 5400RPM</li>
-                                <li>Gaming Keyboard GK30 + Gaming Mouse GM11</li>
-                                <li>3.5 HDD (0/0), 2.5 HDD/SSD(1/0), M.2 (1/0)</li>
-                                <li>Intel WGI219Vethernet (10/100/1000M)</li>
-                                <li>AX200 (WIFI 6)+BT5.1</li>
-                                <li>PSU 330W</li>
-                                <li>Fan Cooler</li>
-                            </ul>
-                            <p class="about__main__model d-flex justify-content-end">SKU D5515AI</p>
-                        </div>
-                    </div>
-                    <div class="w-50"></div>
-                </section>
             </div>
         </div>
 
