@@ -1,38 +1,60 @@
-@import '../css/fonts.css';
+@import "../css/bootstrap.min.css";
+@import "../css/fonts.css";
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: "Poppins";
     list-style: none;
-    text-decoration: none;
     outline: none;
+}
+body{
+    --bs-breadcrumb-divider: '>';
+}
+a{
+    text-decoration: none;
 }
 img {
     object-fit: cover;
+}
+p{
+    margin: 0;
 }
 .container {
     max-width: 1400px;
     margin: 0 auto;
     padding: 0 20px;
 }
+button, input, optgroup, select, textarea {
+    font-size: revert;
+}
+.btn{
+    border-radius: 30px;
+}
+.breadcrumb{
+    font-size: 14px;
+}
 
-nav{
+.nav {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
+    display: block;
 }
 .nav__content {
     border-bottom-left-radius: 42px;
     border-bottom-right-radius: 42px;
-    overflow: hidden;
     padding: 10px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: rgba(255, 255, 255, 0.6);
     box-shadow: 0px 0px 31.7181px rgba(0, 0, 0, 0.12);
+}
+.dropdown-menu{
+    right: 0 !important;
+    top: 10px !important;
+    width: max-content;
 }
 
 .search__form {
@@ -97,6 +119,7 @@ nav{
     font-size: 12.6872px;
     line-height: 19px;
     color: #2f294d;
+    margin: 0;
 }
 .cart__funds {
     font-weight: 500;
@@ -227,7 +250,7 @@ header {
     border-radius: 40px;
 }
 
-section{
+section {
     padding: 30px;
 }
 section .container {
@@ -235,7 +258,7 @@ section .container {
     align-items: center;
     justify-content: space-between;
 }
-.blackSection{
+.blackSection {
     background-color: #000;
 }
 .section__title {
@@ -243,20 +266,21 @@ section .container {
     font-size: 44px;
     line-height: 58px;
 }
-.blackSection .section__title, .blackSection .section__text {
+.blackSection .section__title,
+.blackSection .section__text {
     color: #fff;
 }
-.section__text{
+.section__text {
     font-weight: 300;
     font-size: 18px;
     line-height: 26px;
-    text-align: center; 
+    text-align: center;
 }
 
-.about{
+.about {
     padding: 30px 0 60px;
 }
-.about__title{
+.about__title {
     padding-bottom: 80px;
 }
 .about .section__text {
@@ -264,121 +288,121 @@ section .container {
     padding-bottom: 20px;
 }
 
-.service{
+.service {
     padding: 20px 0 50px;
 }
-.service .container{
+.service .container {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;   
+    align-items: flex-end;
 }
-.service .section__title{
+.service .section__title {
     padding-bottom: 10px;
     margin-right: 200px;
-    text-align: center;    
+    text-align: center;
 }
-.service .section__text{
+.service .section__text {
     width: 1028px;
 }
 
-.service2{
+.service2 {
     padding: 80px 0 40px;
 }
-.service2 .section__title{
-    padding-bottom: 100px; 
+.service2 .section__title {
+    padding-bottom: 100px;
     text-align: center;
     font-size: 56px;
 }
-.service2 .section__text{
+.service2 .section__text {
     font-size: 24px;
     width: 450px;
     padding-bottom: 20px;
     line-height: 35px;
 }
 
-.service3{
+.service3 {
     padding: 77px 0;
 }
-.service3 .container{
+.service3 .container {
     max-width: none;
     justify-content: flex-end;
     align-items: initial;
     padding-right: 30px;
 }
-.service3 .section__content{
+.service3 .section__content {
     margin-left: 200px;
 }
-.service3 .section__title{
-    padding-bottom: 120px; 
+.service3 .section__title {
+    padding-bottom: 120px;
     text-align: center;
     font-size: 56px;
 }
-.service3 .section__text{
+.service3 .section__text {
     width: 1028px;
     font-size: 24px;
     padding-bottom: 20px;
     line-height: 35px;
 }
 
-.service4{
+.service4 {
     padding: 50px 0 60px;
 }
-.service4 .section__title{
+.service4 .section__title {
     text-align: center;
-    padding-bottom: 25px; 
+    padding-bottom: 25px;
     width: 500px;
     font-size: 56px;
 }
-.service4 .section__text{
+.service4 .section__text {
     font-size: 24px;
     width: 486px;
     margin: 0 auto;
     line-height: 35px;
 }
 
-.service5{
+.service5 {
     padding: 80px 0 110px;
 }
-.service5 .container{
+.service5 .container {
     max-width: none;
     justify-content: flex-end;
     align-items: center;
     padding: 0 30px;
 }
-.service5 .section__title{
-    padding-bottom: 120px; 
+.service5 .section__title {
+    padding-bottom: 120px;
     text-align: center;
     font-size: 56px;
 }
-.service5 .section__text{
+.service5 .section__text {
     width: 1028px;
     font-size: 24px;
     padding-bottom: 20px;
     line-height: 35px;
 }
 
-.footer{
+.footer {
     background-color: #020203;
     color: #fff;
-    padding: 50px 0 15px;   
+    padding: 50px 0 15px;
 }
-.footer__contact{
+.footer__contact {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
 }
-.footer__contact__title{
+.footer__contact__title {
     font-weight: 500;
     font-size: 38px;
     line-height: 132%;
     padding-bottom: 10px;
 }
-.footer__contact__text{
+.footer__contact__text {
     font-weight: 300;
     font-size: 16px;
     line-height: 132.5%;
 }
-.footer__input{
+.footer__input {
     background-color: transparent;
     border: 2px solid #fff;
     margin-right: 20px;
@@ -390,8 +414,8 @@ section .container {
     border-radius: 4px;
     padding: 0 20px;
 }
-.footer__contact__btn{
-    background: #0156FF;
+.footer__contact__btn {
+    background: #0156ff;
     color: #fff;
     border-radius: 50px;
     width: 150px;
@@ -399,36 +423,37 @@ section .container {
     cursor: pointer;
     font-weight: 600;
     font-size: 14px;
+    border: none;
 }
 
-.footer__content{
+.footer__content {
     padding: 45px 0 55px;
     display: flex;
     flex-wrap: wrap;
     column-gap: 78px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
-.footer__li{
+.footer__li {
     font-weight: 700;
     font-size: 14px;
     line-height: 100%;
     color: rgba(255, 255, 255, 0.5);
     padding-bottom: 20px;
 }
-.footer__link a{
+.footer__link a {
     font-size: 14px;
     line-height: 18px;
     color: #fff;
 }
-.footer__list:last-child .footer__link{
+.footer__list:last-child .footer__link {
     padding-bottom: 20px;
 }
-.footer__foot{
+.footer__foot {
     display: flex;
     justify-content: space-between;
     padding-top: 15px;
 }
-.footer__copyrights{
+.footer__copyrights {
     font-weight: 500;
     font-size: 12px;
     line-height: 132.5%;
