@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Suyunbek (https://github.com/Uzcoin404)" />
+    <meta name="description" content="MillTech" />
+    <title>MillTech</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/my-cart.css" />
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav__content">
+            <div class="nav__logo">
+                <a href="/"><img src="../img/logo.png" alt="" /></a>
+            </div>
+            <div class="nav__search">
+                <form action="#" class="search__form">
+                    <select name="category" class="search__select">
+                        <option value="1">Categories</option>
+                        <option value="1">Hello world</option>
+                        <option value="1">Hello world</option>
+                    </select>
+                    <input type="search" class="search__input" placeholder="Rechercher un produit ou service ..." />
+                    <button type="submit" class="search__btn">
+                        <img src="../img/icon/search.svg" alt="" />
+                    </button>
+                </form>
+            </div>
+            <div class="nav__tools">
+                <a href="#" class="user__cart">
+                    <div class="user__cart__icon">
+                        <img src="../img/icon/shopping-cart.svg" alt="" />
+                        <span class="user__cart__indi">2</span>
+                    </div>
+                    <div class="cart__items">
+                        <p class="cart__text">My cart</p>
+                        <span class="cart__funds">$21</span>
+                    </div>
+                </a>
+                <div class="dropdown">
+                    <a href="#" data-toggle="dropdown" class="dropdown-link" aria-haspopup="true" aria-expanded="false">
+                        <img src="../img/avatar.png" alt="" />
+                        <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.36433 0.583141C0.673997 0.273474 1.17607 0.273474 1.48573 0.583141L5.68274 4.78015L9.87975 0.583141C10.1894 0.273474 10.6915 0.273474 11.0012 0.583141C11.3108 0.892808 11.3108 1.39488 11.0012 1.70454L6.24344 6.46225C5.93378 6.77192 5.43171 6.77192 5.12204 6.46225L0.36433 1.70454C0.0546633 1.39488 0.0546633 0.892808 0.36433 0.583141Z"
+                                fill="#2F294D" />
+                        </svg>
+                    </a>
+
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a href="#" class="dropdown-item">My Account</a>
+                        <a href="#" class="dropdown-item">My Wish List (0)</a>
+                        <a href="#" class="dropdown-item">Compare (0)</a>
+                        <a href="#" class="dropdown-item">Create an Account</a>
+                        <a href="#" class="dropdown-item">Sign In</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="shopping-cart">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Acceuil</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Panier</li>
+            </ol>
+            <h2 class="mycart__title">Mon Panier</h2>
+            <div class="mycart__wrapper">
+                <div class="mycart__content">
+                    <table class="mycart__table w-100">
+                        <thead>
+                            <tr>
+                                <th>Produits</th>
+                                <th>Nom</th>
+                                <th>Type</th>
+                                <th>Prix</th>
+                                <th>Quantité</th>
+                                <th>Total</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src="../img/card1.png" alt="" class="table__img">
+                                </td>
+                                <td class="table__text">MSI MEG TRIDENT X</td>
+                                <td class="table__text">Location</td>
+                                <td class="table__price">$4,349.00</td>
+                                <td class="table__select">
+                                    <select class="form-select product__header__select mb-3">
+                                        <option selected>1</option>
+                                        <option value="1">2</option>
+                                        <option value="2">3</option>
+                                        <option value="3">4</option>
+                                    </select>
+                                    <select class="form-select product__header__select">
+                                        <option selected>15 Jrs</option>
+                                        <option value="1">20 Jrs</option>
+                                        <option value="1">25 Jrs</option>
+                                        <option value="1">30 Jrs</option>
+                                    </select>
+                                </td>
+                                <td class="table__price">$13,047.00</td>
+                                <td>
+                                    <div class="table__controls">
+                                        <img src="../img/icon/close.svg" alt="">
+                                        <img src="../img/icon/edit.svg" alt="">
+                                    </div> 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="../img/card1.png" alt="" class="table__img">
+                                </td>
+                                <td class="table__text">MSI MEG TRIDENT X</td>
+                                <td class="table__text">Location</td>
+                                <td class="table__price">$4,349.00</td>
+                                <td class="table__select">
+                                    <select class="form-select product__header__select mb-3">
+                                        <option selected>1</option>
+                                        <option value="1">2</option>
+                                        <option value="2">3</option>
+                                        <option value="3">4</option>
+                                    </select>
+                                    <select class="form-select product__header__select">
+                                        <option selected>15 Jrs</option>
+                                        <option value="1">20 Jrs</option>
+                                        <option value="1">25 Jrs</option>
+                                        <option value="1">30 Jrs</option>
+                                    </select>
+                                </td>
+                                <td class="table__price">$13,047.00</td>
+                                <td>
+                                    <div class="table__controls">
+                                        <img src="../img/icon/close.svg" alt="">
+                                        <img src="../img/icon/edit.svg" alt="">
+                                    </div> 
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button class="btn btn-outline-secondary mt-4 me-1">Continuer</button>
+                    <button class="btn btn-dark mt-4">Supprimer Le Panier</button>
+                </div>
+                <div class="mycart__panel">
+                    <h3 class="cart__title">Récap</h3>
+                    <div class="accordion">
+                        <button class="btn-toggle-show p-1">
+                            <span>Frais De Livraison</span>
+                            <i><img src="../img/icon/arrow-down.svg" alt=""></i>
+                        </button>
+                        <div class="inner-content para-hide p-1">
+                            <p class="acc__text">Entrer La destination</p>
+                        </div>
+                    </div>
+                    <div class="accordion accordion2 mt-2">
+                        <button class="btn-toggle-show p-1">
+                            <span>Appliquer Un Code Promo</span>
+                            <i><img src="../img/icon/arrow-down.svg" alt=""></i>
+                        </button>
+                        <div class="inner-content para-hide p-1">
+                            <p class="acc__text">Entrer Le Code</p>
+                        </div>
+                    </div>
+                    <div class="cart__item">
+                        <p class="item__text">Total</p>
+                        <p class="item__text">$13,047.00</p>
+                    </div>
+                    <div class="cart__item">
+                        <div>
+                            <p class="item__text">Livraison</p>
+                            <p class="item__desc">(Standard Rate - Price may vary depending on the item/destination. TECS Staff will contact you.)</p>
+                        </div>
+                        <p class="item__text">$21.00</p>
+                    </div>
+                    <div class="cart__item mb-4">
+                        <p class="item__text">Taxe</p>
+                        <p class="item__text">$1.91</p>
+                    </div>
+                    <div class="cart__item cart__item__total mb-1">
+                        <p class="item__text">Total Commande</p>
+                        <p class="item__text">$13,068.00</p>
+                    </div>
+                    <a
+                        href="#"
+                        role="button"
+                        class="btn btn-lg btn-primary product__header__pay w-100 mt-1"
+                        >Checkout</a
+                    >
+                    <a
+                        href="#"
+                        role="button"
+                        class="btn btn-lg product__header__paypay w-100 mt-2"
+                        >Check out Avec <img src="../img/icon/paypal-icon.png" alt=""
+                    /></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__contact">
+                <div class="footer__contact__content">
+                    <h3 class="footer__contact__title">Abonnes Toi</h3>
+                    <h3 class="footer__contact__text">
+                        Soit Le Premier A Connaitre Nos Reductions
+                    </h3>
+                </div>
+                <form class="footer__contact__form" action="#">
+                    <input type="text" name="email" class="footer__input" placeholder="Your Email" />
+                    <button type="submit" class="footer__contact__btn">
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+            <div class="footer__content">
+                <ul class="footer__list">
+                    <li class="footer__li">Mesures Telecom</li>
+                    <li class="footer__link">
+                        <a href="#">Mesures Electroniques</a>
+                    </li>
+                    <li class="footer__link"><a href="#">Mesures RF</a></li>
+                    <li class="footer__link">
+                        <a href="#">Reseaux Mobiles</a>
+                    </li>
+                    <li class="footer__link">
+                        <a href="#">Testeur de lignes</a>
+                    </li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__li">Materials Informatiques</li>
+                    <li class="footer__link"><a href="#">Multimedia</a></li>
+                    <li class="footer__link">
+                        <a href="#">Ordinateur desktop</a>
+                    </li>
+                    <li class="footer__link">
+                        <a href="#">Ordinateur Portable</a>
+                    </li>
+                    <li class="footer__link"><a href="#">Serveurs</a></li>
+                    <li class="footer__link"><a href="#">Réseaux</a></li>
+                    <li class="footer__link"><a href="#">Teblettes</a></li>
+                    <li class="footer__link"><a href="#">PDA</a></li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__li">Produits Telecom</li>
+                    <li class="footer__link">
+                        <a href="#">Commutateurs</a>
+                    </li>
+                    <li class="footer__link">
+                        <a href="#">Produits RF</a>
+                    </li>
+                    <li class="footer__link"><a href="#">POP</a></li>
+                    <li class="footer__link">
+                        <a href="#">Telephonie IP</a>
+                    </li>
+                    <li class="footer__link">
+                        <a href="#">Telephonie Standard</a>
+                    </li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__li">Réseaux Optiques</li>
+                    <li class="footer__link">
+                        <a href="#">Fournitures</a>
+                    </li>
+                    <li class="footer__link">
+                        <a href="#">Mesures Optique</a>
+                    </li>
+                    <li class="footer__link"><a href="#">Outillage</a></li>
+                    <li class="footer__link"><a href="#">POO</a></li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__li">Address</li>
+                    <li class="footer__link">
+                        <a href="#">43, Rue Tensift Appt,</a>
+                    </li>
+                    <li class="footer__link">
+                        <a href="#">N°6 Agdal, Rabat,Maroc</a>
+                    </li>
+                    <li class="footer__link" style="padding-bottom: 0">
+                        <a href="#">Téléphone:+212-537-77-69-70</a>
+                    </li>
+                    <li class="footer__link">
+                        <a href="#">Fax: +212-537-77-69-70</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__foot">
+                <div class="footer__social">
+                    <a href="#"><img src="../img/icon/facebook.svg" alt="" /></a>
+                    <a href="#"><img src="../img/icon/instagram.svg" alt="" /></a>
+                </div>
+                <div class="footer__partners">
+                    <a href="#"><img src="../img/icon/paypal.png" alt="" /></a>
+                    <a href="#"><img src="../img/icon/visa.png" alt="" /></a>
+                    <a href="#"><img src="../img/icon/maestro.png" alt="" /></a>
+                    <a href="#"><img src="../img/icon/discover.png" alt="" /></a>
+                    <a href="#"><img src="../img/icon/american-express.png" alt="" /></a>
+                </div>
+                <p class="footer__copyrights">Copyright © MillTech</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(".btn-toggle-show").click(toggleText(".inner-content"));
+
+        function toggleText(element) {
+            return function (e) {
+                $(this).parent().find(element).slideToggle(300);
+                $(this).parent().find(element).toggleClass("para-hide");
+                $(this).find("i").toggleClass("rotate");
+            }
+        }
+    </script>
+</body>
+</html>

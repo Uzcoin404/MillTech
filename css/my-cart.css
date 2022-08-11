@@ -1,0 +1,131 @@
+.shopping-cart{
+    padding: 60px 0 150px;
+    margin-top: 90px;
+}
+
+.mycart__title{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    margin-top: 25px;
+}
+.mycart__wrapper{
+    display: flex;
+}
+.mycart__content{
+    width: 67%;
+}
+.mycart__panel{
+    width: 33%;
+    margin-left: 40px;
+    padding: 15px 30px 60px;
+    background-color: #F5F7FF;
+}
+
+.mycart__table{
+    margin-top: 30px;
+}
+.mycart__table th{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+}
+.mycart__table tr{
+    border-bottom: 1px solid #CACDD8;
+}
+.mycart__table thead tr th{
+    padding-bottom: 10px;
+}
+.mycart__table tbody tr td{
+    padding: 25px 0;
+    vertical-align: top;
+}
+.table__img{
+    width: 120px;
+    height: 120px;
+}
+.table__text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+}
+.table__price{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+.table__controls{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.table__controls{
+    cursor: pointer;
+}
+.product__header__select {
+    width: 70px;
+    background-color: #f5f7ff;
+    height: 50px;
+}
+.btn{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 13px 30px;
+}
+
+.cart__title{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    padding-bottom: 5px;
+}
+.btn-toggle-show {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    transition: 0.3s ease;
+    border: none;
+    background-color: transparent;
+    padding-bottom: 10px !important;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+}
+.acc__text{
+    color: #666;
+    font-size: 14px;
+    line-height: 21px;
+    padding-top: 10px;
+}
+.accordion2{
+    padding-bottom: 5px;
+    border-bottom: 1px solid #CACDD8;
+}
+
+.cart__item{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.item__text{
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 210%;
+}
+.item__desc{
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 180%;
+    color: #A2A6B0;
+}
+.cart__item__total .item__text{
+    font-size: 18px;
+}
+.product__header__paypay {
+    background-color: #FFB800;
+}
